@@ -39,7 +39,7 @@ jobs:
       - name: Build
         run: |
           npm ci
-          npm run build -- --base=/vue-jsx-examples/
+          npm run build-only -- --base=/vue-jsx-examples/
       - name: Deploy
         uses: actions/upload-pages-artifact@v3
         with:
